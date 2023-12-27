@@ -16,7 +16,7 @@ function App() {
       
       <div>
         {
-          WebApp?.initData
+          WebApp?.initData && JSON.parse(WebApp?.initData)
         }
       </div>
 
