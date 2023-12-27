@@ -16,12 +16,6 @@ function App() {
       
       <div>
         {
-          WebApp?.WebAppUser
-        }
-      </div>
-
-      <div>
-        {
           WebApp?.initData
         }
       </div>
