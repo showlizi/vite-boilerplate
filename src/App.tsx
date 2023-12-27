@@ -20,7 +20,7 @@ function App() {
         }
       </div>
 
-      <button onClick={() => WebApp.showAlert(JSON.stringify(WebApp))}>
+      <button onClick={() => WebApp.showAlert('this is test showAlert')}>
         Show Alert
       </button>
     </>
