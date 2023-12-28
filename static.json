@@ -1,0 +1,7 @@
+{
+  "root": "/vite-boilerplate/dist/",
+  "clean_urls": false,
+  "routes": {
+    "/**": "index.html"
+  }
+ }

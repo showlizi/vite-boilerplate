@@ -10,7 +10,7 @@ WebApp.ready();
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <BrowserRouter basename={`/vite-boilerplate`}>
+    <BrowserRouter  basename={`/vite-boilerplate/`}>
       <App />
     </BrowserRouter>
   </React.StrictMode>,
