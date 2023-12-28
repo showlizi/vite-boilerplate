@@ -69,6 +69,7 @@ function App() {
         <Route path={base} element={<Layout />}>
           <Route index element={<Home />} />
           <Route path={`${base}/earn`} element={<Earn />} />
+          <Route path="/vite-boilerplate/wallet" element={<Wallet />} />
           <Route path={`${base}/wallet`}  element={<Wallet />} />
 
           {/* Using path="*"" means "match anything", so this route
