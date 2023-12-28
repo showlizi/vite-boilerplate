@@ -57,7 +57,7 @@ function NoMatch() {
 
 function App() {
   // const [count, setCount] = useState(0)
-  // console.log(WebApp)
+  console.log(WebApp)
 
   return (
     <>
