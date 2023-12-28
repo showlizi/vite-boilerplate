@@ -27,5 +27,5 @@ export default defineConfig({
   build: {
     outDir: './dist'
   },
-  base: '/vite-boilerplate',
+  base: './',
 });
