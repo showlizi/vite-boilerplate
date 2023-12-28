@@ -65,7 +65,7 @@ function App() {
             parent route paths, and nested route elements render inside
             parent route elements. See the note about <Outlet> below. */}
       <Routes>
-        <Route path="/" element={<Layout />}>
+        <Route path="/vite-boilerplate" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="earn" element={<Earn />} />
           <Route path="wallet" element={<Wallet />} />
