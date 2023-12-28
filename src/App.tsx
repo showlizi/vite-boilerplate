@@ -55,6 +55,7 @@ function NoMatch() {
   );
 }
 
+const base = '/vite-boilerplate'
 function App() {
   // const [count, setCount] = useState(0)
   console.log(WebApp)
@@ -65,10 +66,10 @@ function App() {
             parent route paths, and nested route elements render inside
             parent route elements. See the note about <Outlet> below. */}
       <Routes>
-        <Route path="/vite-boilerplate" element={<Layout />}>
+        <Route path={base} element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path="earn" element={<Earn />} />
-          <Route path="wallet" element={<Wallet />} />
+          <Route path={`${base}/earn`} element={<Earn />} />
+          <Route path={`${base}/wallet`}  element={<Wallet />} />
 
           {/* Using path="*"" means "match anything", so this route
                 acts like a catch-all for URLs that we don't have explicit
