@@ -4,7 +4,7 @@ export default function Home() {
     <div>
       <div className={`text-[50px]`}>Home</div>
 
-      <Link to="/vite-boilerplate/earn">
+      <Link to="/earn">
         点我去 earn 
       </Link>
     </div>

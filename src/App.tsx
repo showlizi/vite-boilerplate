@@ -55,7 +55,7 @@ function NoMatch() {
   );
 }
 
-const base = '/vite-boilerplate'
+const base = '/'
 function App() {
   // const [count, setCount] = useState(0)
   console.log(WebApp)
@@ -68,9 +68,8 @@ function App() {
       <Routes>
         <Route path={base} element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path={`${base}/earn`} element={<Earn />} />
-          <Route path="/vite-boilerplate/wallet" element={<Wallet />} />
-          <Route path={`${base}/wallet`}  element={<Wallet />} />
+          <Route path={`earn`} element={<Earn />} />
+          <Route path={`wallet`}  element={<Wallet />} />
 
           {/* Using path="*"" means "match anything", so this route
                 acts like a catch-all for URLs that we don't have explicit
