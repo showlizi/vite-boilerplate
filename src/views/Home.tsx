@@ -21,7 +21,7 @@ const gameList = [
 
 export default function Home() {
   return (
-    <div>
+    <>
       <div className="w-full min-h-screen relative bg-gray-900 rounded-tl-lg rounded-tr-lg">
         <Header />
 
@@ -138,6 +138,6 @@ export default function Home() {
       {/* <Link to="/earn">
         点我去 earn 
       </Link> */}
-    </div>
+    </>
   );
 }
