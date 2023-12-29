@@ -1,4 +1,5 @@
 // import { Link } from "react-router-dom";
+// @ts-ignore
 import Header from "@/components/Header";
 import CopyIcon from "@/assets/home/copy-icon.png";
 import UsdtIcon from "@/assets/home/usdt-icon.png";

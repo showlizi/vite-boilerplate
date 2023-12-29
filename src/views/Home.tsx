@@ -1,6 +1,7 @@
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import Banner from "@/assets/home/Banner.png";
-import Header from "@/components/Header";
+// @ts-ignore
+import Header from "@/components/Header.tsx";
 
 import GameCard from "@/assets/home/game-card.png";
 import GiftIcon from "@/assets/home/gift-icon.png";
