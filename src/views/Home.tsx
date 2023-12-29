@@ -1,13 +1,23 @@
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Banner from "@/assets/home/Banner.png";
 // @ts-ignore
 import Header from "@/components/Header.tsx";
 
-import GameCard from "@/assets/home/game-card.png";
+// import GameCard from "@/assets/home/game-card.png";
 import GiftIcon from "@/assets/home/gift-icon.png";
 import Card1 from "@/assets/home/card-1.png";
 import Card2 from "@/assets/home/card-2.png";
 
+import GameCard0 from "@/assets/home/card-list/game-card-0.png";
+import GameCard1 from "@/assets/home/card-list/game-card-1.png";
+import GameCard2 from "@/assets/home/card-list/game-card-2.png";
+import GameCard3 from "@/assets/home/card-list/game-card-3.png";
+import GameCard4 from "@/assets/home/card-list/game-card-4.png";
+import GameCard5 from "@/assets/home/card-list/game-card-5.png";
+
+const gameList = [
+  GameCard0,GameCard1,GameCard2,GameCard3,GameCard4,GameCard5
+]
 
 export default function Home() {
   return (
@@ -16,7 +26,7 @@ export default function Home() {
         <Header />
 
         <div className="w-full h-[202px] relative  ">
-          <img className="w-full " src={Banner} />
+          <img className="w-full h-[180px]" src={Banner} />
           {/* <div className="w-full h-[134px] left-0 top-[69px] absolute bg-gradient-to-b from-black to-black" /> */}
           <div className="left-[32px] bottom-[40px] absolute text-center text-emerald-200 text-3xl font-bold font-['Inter'] leading-[34px] tracking-tight">1000 $BITS Rewards<br/>First-time deposit</div>
         </div>
@@ -28,9 +38,9 @@ export default function Home() {
             <div className="text-neutral-100 text-lg font-semibold font-['Inter'] leading-7">Gaming</div>
           </div>
           <div className={`px-[10px] flex flex-col`}>
-            <div className="self-stretch  flex-col justify-start items-start gap-3 flex">
-              <div className="self-stretch justify-start items-center gap-3 inline-flex">
-                <div className="w-1/3 h-[136px] relative bg-red-600 rounded-lg border border-gray-400 border-opacity-30">
+            <div className=" flex-col justify-start items-start  flex ">
+              <div className=" justify-center items-center gap-3 flex flex-wrap">
+                {/* <div className="w-1/3 h-[136px] relative bg-red-600 rounded-lg border border-gray-400 border-opacity-30">
                   <img src={GameCard} alt="GameCard" />
                 </div>
                 <div className="w-1/3 h-[136px] relative bg-red-600 rounded-lg border border-gray-400 border-opacity-30">
@@ -38,13 +48,24 @@ export default function Home() {
                 </div>
                 <div className="w-1/3 h-[136px] relative bg-red-600 rounded-lg border border-gray-400 border-opacity-30">
                   <img src={GameCard} alt="GameCard" />
-                </div>
+                </div> */}
+                {
+                  gameList.map((item)=>{
+                    return (
+                      <div key={item} className="w-[103px] h-[136px] relative">
+                        <Link to="/earn">
+                          <img className="w-full" src={item} alt="GameCard" />
+                        </Link>
+                      </div>
+                    )
+                  })
+                }
               </div>
               
             </div>
           </div>
 
-          <div className={`px-[10px] flex flex-col`}>
+          {/* <div className={`px-[10px] flex flex-col`}>
             <div className="self-stretch flex-col justify-start items-start gap-3 flex">
               <div className="self-stretch justify-start items-center gap-3 inline-flex">
                 <div className="w-1/3 h-[136px] relative bg-red-600 rounded-lg border border-gray-400 border-opacity-30">
@@ -59,7 +80,7 @@ export default function Home() {
               </div>
               
             </div>
-          </div>
+          </div> */}
 
         </div>
 
@@ -101,7 +122,7 @@ export default function Home() {
               <div className="text-fuchsia-400 text-xs font-normal font-['Inter'] leading-[18px]">Earnings are paid monthly to your account in $BITS.</div>
             </div>
 
-            
+  
 
           </div>
         </div>

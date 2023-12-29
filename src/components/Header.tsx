@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import Logo from "@/assets/home/logo.png";
 import UserIcon from "@/assets/home/user-icon.png";
 import UsdtIcon from "@/assets/home/usdt-icon.png";
-export default function Header() {
+const Header = () => {
   return (
     <>
       <div className="w-full h-[52px] px-4  bg-gray-900 justify-between items-center inline-flex">
@@ -38,3 +38,5 @@ export default function Header() {
     </>
   );
 }
+
+export default Header;

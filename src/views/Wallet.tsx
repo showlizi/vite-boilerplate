@@ -1,6 +1,6 @@
 // import { Link } from "react-router-dom";
 // @ts-ignore
-import Header from "@/components/Header";
+import Header from "@/components/Header.tsx";
 import CopyIcon from "@/assets/home/copy-icon.png";
 import UsdtIcon from "@/assets/home/usdt-icon.png";
 import QRcode from "@/assets/home/QRcode.png";
