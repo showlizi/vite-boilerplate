@@ -28,14 +28,14 @@ export default function Home() {
         <div className="w-full h-[202px] relative  ">
           <img className="w-full h-[180px]" src={Banner} />
           {/* <div className="w-full h-[134px] left-0 top-[69px] absolute bg-gradient-to-b from-black to-black" /> */}
-          <div className="left-[32px] bottom-[40px] absolute text-center text-emerald-200 text-3xl font-bold font-['Inter'] leading-[34px] tracking-tight">1000 $BITS Rewards<br/>First-time deposit</div>
+          <div className="left-[32px] bottom-[40px] absolute text-center text-emerald-200 text-3xl font-bold  leading-[34px] tracking-tight">1000 $BITS Rewards<br/>First-time deposit</div>
         </div>
         
         
         <div className="flex-col justify-start items-start gap-4 inline-flex">
           <div className="justify-start items-center gap-1.5 inline-flex">
             <div className="w-[22px] h-[22px] relative" />
-            <div className="text-neutral-100 text-lg font-semibold font-['Inter'] leading-7">Gaming</div>
+            <div className="text-neutral-100 text-lg font-semibold  leading-7">Gaming</div>
           </div>
           <div className={`px-[10px] flex flex-col`}>
             <div className=" flex-col justify-start items-start  flex ">
@@ -92,7 +92,7 @@ export default function Home() {
               <div className="w-[22px] h-[22px] relative" >
                 <img className="w-full" src={GiftIcon} />
               </div>
-              <div className="text-neutral-100 text-lg font-semibold font-['Inter'] leading-7">New User Rewards</div>
+              <div className="text-neutral-100 text-lg font-semibold  leading-7">New User Rewards</div>
             </div>
 
             <div className="mt-[16px] relative gap-[20px] flex w-full">
@@ -101,8 +101,8 @@ export default function Home() {
                   <img className={`w-full`} src={Card1} alt="Card1" />
                 </div>
                 <div className="absolute left-0 top-[20px] z-[3] w-full h-full items-center flex flex-col ">
-                  <div className="text-center text-fuchsia-400 text-lg font-bold font-['Inter'] leading-7">1000 $BITS</div>
-                  <div className="text-center text-fuchsia-400 text-sm font-medium font-['Inter'] leading-tight">First-time deposit</div>
+                  <div className="text-center text-fuchsia-400 text-lg font-bold  leading-7">1000 $BITS</div>
+                  <div className="text-center text-fuchsia-400 text-sm font-medium  leading-tight">First-time deposit</div>
                 </div>
               </div>
               
@@ -111,15 +111,15 @@ export default function Home() {
                   <img className={`w-full`} src={Card2} alt="Card2" />
                 </div>
                 <div className="absolute left-0 top-[20px] z-[3] w-full h-full items-center flex flex-col ">
-                <div className="text-center text-emerald-300 text-lg font-bold font-['Inter'] leading-7">5000 $BITS</div>
-                  <div className="text-center text-emerald-300 text-sm font-medium font-['Inter'] leading-tight">5000 $BITS</div>
+                <div className="text-center text-emerald-300 text-lg font-bold  leading-7">5000 $BITS</div>
+                  <div className="text-center text-emerald-300 text-sm font-medium  leading-tight">5000 $BITS</div>
                 </div>
               </div>
 
             </div>
 
             <div className={`w-full text-center`}>
-              <div className="text-fuchsia-400 text-xs font-normal font-['Inter'] leading-[18px]">Earnings are paid monthly to your account in $BITS.</div>
+              <div className="text-fuchsia-400 text-xs font-normal  leading-[18px]">Earnings are paid monthly to your account in $BITS.</div>
             </div>
 
   
@@ -129,7 +129,7 @@ export default function Home() {
 
         <div className="w-full h-[50px] flex-col justify-center items-center gap-4 inline-flex">
           <div className="w-full h-[0px] border border-zinc-700"></div>
-            <div className="text-center text-neutral-400 text-[13px] font-medium font-['Inter'] leading-[18px]">18+ only | Play responsibly | Term apply</div>
+            <div className="text-center text-neutral-400 text-[13px] font-medium  leading-[18px]">18+ only | Play responsibly | Term apply</div>
           <div className="w-full h-[0px] border border-zinc-700"></div>
         </div>
        
