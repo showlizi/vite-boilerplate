@@ -18,7 +18,7 @@ export default function Wallet() {
   let [categories] = useState({
     Deposit: [
       {
-        id: 1,
+        tid: 1,
         title: 'Does drinking coffee make you smarter?',
         date: '5h ago',
         commentCount: 5,
@@ -27,7 +27,7 @@ export default function Wallet() {
     ],
     Whithdraw: [
       {
-        id: 2,
+        tid: 2,
         title: 'Is tech making coffee better or worse?',
         date: 'Jan 7',
         commentCount: 29,
@@ -70,6 +70,12 @@ export default function Wallet() {
                   'ring-white/60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2'
                 )}
               >
+                {items?.map((item) => (
+                  <div className='hidden'>
+                    {item.title}
+                  </div>
+                ))}
+                
                 {idx === 0 ? (
                   <>
                     <div className="w-full self-stretch px-3.5 py-2.5 bg-fuchsia-950 rounded-lg shadow border border-zinc-700 justify-start items-center gap-2 inline-flex">
