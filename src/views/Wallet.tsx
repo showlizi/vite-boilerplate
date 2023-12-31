@@ -1,5 +1,5 @@
 // import { Link } from "react-router-dom";
-import {useState} from 'react';
+import {useState, useEffect} from 'react';
 import { Tab } from '@headlessui/react';
 // @ts-ignore
 import Header from "@/components/Header.tsx";
@@ -35,6 +35,10 @@ export default function Wallet() {
       },
     ],
   });
+
+  useEffect(() => {
+    debugger;
+  }, [])
 
   return (
     <>
