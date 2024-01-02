@@ -7,10 +7,9 @@ import './App.css'
 import Home from './views/Home'
 import Earn from './views/Earn'
 import Wallet from './views/Wallet'
-
 import WebApp from '@twa-dev/sdk'
 
-
+declare const window: any;
 
 // function App() {
 //   // const [count, setCount] = useState(0)
@@ -64,7 +63,7 @@ function App() {
   useEffect(() => {
     // 在组件挂载后，将对象挂载到 window 上
     console.log(WebApp)
-    // window.WebApp = WebApp;
+    window.WebApp = WebApp;
   }, []);
   
   return (
