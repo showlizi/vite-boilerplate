@@ -59,6 +59,7 @@ const base = '/'
 function App() {
   // const [count, setCount] = useState(0)
   console.log(WebApp)
+  window.WebApp = WebApp;
 
   return (
     <>
