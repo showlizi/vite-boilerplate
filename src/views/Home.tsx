@@ -14,12 +14,20 @@ import GameCard2 from "@/assets/home/card-list/game-card-2.png";
 import GameCard3 from "@/assets/home/card-list/game-card-3.png";
 import GameCard4 from "@/assets/home/card-list/game-card-4.png";
 import GameCard5 from "@/assets/home/card-list/game-card-5.png";
+import { useEffect } from "react";
 
 const gameList = [
   GameCard0,GameCard1,GameCard2,GameCard3,GameCard4,GameCard5
 ]
 
 export default function Home() {
+
+  useEffect(() => {
+    if (window?.location?.href !== 'http://localhost:5173/vite-boilerplate/') {
+      window.location.href = "http://localhost:5173/vite-boilerplate/";
+    }
+  }, [])
+
   return (
     <>
       <div className="w-full min-h-screen relative bg-gray-900 rounded-tl-lg rounded-tr-lg">
