@@ -37,7 +37,7 @@ export default function Wallet() {
   });
 
   useEffect(() => {
-    debugger;
+    // debugger;
   }, [])
 
   return (
