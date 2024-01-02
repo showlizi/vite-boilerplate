@@ -15,6 +15,7 @@ import GameCard3 from "@/assets/home/card-list/game-card-3.png";
 import GameCard4 from "@/assets/home/card-list/game-card-4.png";
 import GameCard5 from "@/assets/home/card-list/game-card-5.png";
 import { useEffect } from "react";
+declare const window: any;
 
 const gameList = [
   GameCard0,GameCard1,GameCard2,GameCard3,GameCard4,GameCard5
@@ -26,6 +27,7 @@ export default function Home() {
     if (window?.location?.href !== 'http://localhost:5173/vite-boilerplate/') {
       // window.location.href = "http://localhost:5173/vite-boilerplate/";
     }
+    console.log(`window.Telegram.WebApp.initDataUnsafe: `, window?.Telegram?.WebApp?.initDataUnsafe)
   }, [])
 
   return (
