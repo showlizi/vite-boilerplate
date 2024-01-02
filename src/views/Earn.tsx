@@ -5,8 +5,15 @@ import bannerTop from "@/assets/earn/banner-top.png";
 import bannerBottom from "@/assets/earn/banner-bottom.png";
 import CopyIcon from "@/assets/home/copy-icon.png";
 import UsdtIcon from "@/assets/home/usdt-icon.png";
+import { useEffect } from "react";
+import WebApp from '@twa-dev/sdk'
 
 export default function Earn() {
+
+  useEffect(() => {
+    WebApp?.BackButton?.show();
+  }, [])
+
   return (
     <>
       <div className="pb-[60px] w-full min-h-screen relative bg-gray-900 rounded-tl-lg rounded-tr-lg">
