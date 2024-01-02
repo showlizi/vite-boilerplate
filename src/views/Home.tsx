@@ -24,8 +24,9 @@ export default function Home() {
 
   useEffect(() => {
     if (window?.location?.href !== 'http://localhost:5173/vite-boilerplate/') {
-      window.location.href = "http://localhost:5173/vite-boilerplate/";
+      // window.location.href = "http://localhost:5173/vite-boilerplate/";
     }
+    console.log(`window.Telegram.WebApp: `, window.Telegram.WebApp?.initData);
   }, [])
 
   return (
